@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Kras design</title>
+        <link rel="stylesheet" href="style/style.css">
+        <style>
+            header nav a:nth-of-type(5) {
+                border-bottom: #ffffff 10px solid;
+                font-weight: bold;
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            main > * {
+                font-size: 3vw;
+                margin: 20px;
+            }
+            p {
+                margin-top: 100px;
+                width: min(90%,20em);
+            }
+            form {
+                width: min(90%,10em);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            form * {
+                font-size: 2vw;
+                text-align: center;
+            }
+        </style>
+        <script src="style/javascript.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="logoDiv">
+                <div id="circle"></div>
+                <img src="content/LogoKras.png" alt="logo">
+            </div>
+            <nav>
+                <a href="index.html">Homepage</a>
+                <a href="contact.html">Contact</a>
+                <a href="aboutUs.html">About us</a>
+                <a href="tarieven.html">Tarieven</a>
+                <a href="verhuizing.html">Verhuizing</a>
+                <a href="webhosting.php">Webhosting</a>
+            </nav>
+        </header>
+        <main>
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'nl'}, 'google_translate_element');
+                }
+            </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>
+                Wij zijn van locatie veranderd! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            </p>
+            <form method="post" action="">
+                <label for="email">Laat hier je e-mail achter voor informatie over de verhuizing!</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com">
+                <input type="submit">
+            </form>
+        </main>
+    </body>
+</html>

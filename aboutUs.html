@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Kras design</title>
+        <link rel="stylesheet" href="style/style.css">
+        <style>
+            header nav a:nth-of-type(3) {
+                border-bottom: #ffffff 10px solid;
+                font-weight: bold;
+            }
+            body {
+                height: 100vh;
+            }
+            main {
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+            main > * {
+                font-size: 3vw;
+                margin: 20px;
+            }
+            p {
+                margin-top: 100px;
+                width: min(90%,20em);
+            }
+            main > img {
+                height: 50vh;
+            }
+        </style>
+        <script src="style/javascript.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="logoDiv">
+                <div id="circle"></div>
+                <img src="content/LogoKras.png" alt="logo">
+            </div>
+            <nav>
+                <a href="index.html">Homepage</a>
+                <a href="contact.html">Contact</a>
+                <a href="aboutUs.html">Over ons</a>
+                <a href="tarieven.html">Tarieven</a>
+                <a href="verhuizing.html">Verhuizing</a>
+                <a href="webhosting.php">Webhosting</a>
+            </nav>
+        </header>
+        <main>
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'nl'}, 'google_translate_element');
+                }
+            </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <p>
+                Jan en Freek Kras zijn eigenaren/directeuren van het bedrijf KRAS-design. Dit is een
+                bedrijf waar ontwerpen gemaakt worden voor logo’s, waar huisstijlen worden gemaakt
+                en waar websites worden ontworpen en gehost. Bij KRAS-design werken intussen 18
+                werknemers.
+            </p>
+            <img src="content/placeholder.png" alt="">
+        </main>
+    </body>
+</html>

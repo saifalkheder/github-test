@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "BritannicBold";
+    src: url("../BRITANIC.TTF");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "BritannicBold", sans-serif;
+}
+body {
+    background-color: #44484C;
+}
+header {
+    height: 100px;
+    background-color: #90ee90;
+    position: sticky;
+    top: 0;
+    z-index: 69;
+}
+main {
+    z-index: 5;
+    color: #ffffff;
+    width: 100%;
+}
+@media only screen and (max-height: 600px),
+    only screen and (max-width: 800px){
+    header {
+        position: relative;
+    }
+}
+#logoDiv {
+    height: min(45vw,300px);
+    width: min(45vw,300px);
+    position: absolute;
+}
+#logoDiv #circle {
+    background-color: #90EE90;
+    border-radius: 100%;
+    position: absolute;
+    left: -110%;
+    top: -85%;
+    width: 220%;
+    height: 170%;
+}
+#logoDiv img {
+    position: absolute;
+    width: max(61%,84px);
+    height: max(61%,84px);
+    left: max(4%,6px);
+    top: max(4%,6px);
+}
+header nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    line-height: 100px;
+    width: calc(100vw - min(34vw,220px));
+    font-size: calc((100vw - min(34vw,220px)) * 0.03);
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+header nav a:hover {
+    background-color: rgba(100%,100%,100%,0.5);
+}
+img {
+    border-radius: 7px;
+}
+#google_translate_element {
+    position: absolute;
+    right: 0;
+    top: 110px;
+    font-size: 16px;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: #90EE90;
+    border: 20px solid #90EE90;
+}
+input,textarea {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    margin: 2px;
+}

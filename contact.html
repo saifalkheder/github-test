@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Kras design</title>
+        <link rel="stylesheet" href="style/style.css">
+        <style>
+            header nav a:nth-of-type(2) {
+                border-bottom: #ffffff 10px solid;
+                font-weight: bold;
+            }
+            body {
+                height: 100vh;
+            }
+            main {
+                text-align: center;
+                display: grid;
+                grid-template-columns: 600px 1fr;
+                grid-template-rows: 1fr;
+                align-items: flex-end;
+                justify-items: center;
+                height: calc(100vh - 100px);
+            }
+            #maps {
+                width: 500px;
+                grid-row: 1;
+                grid-column: 1;
+                background-color: #ffffff;
+                height: 440px;
+                box-sizing: content-box;
+                border: 5px solid #000000;
+            }
+            #formdiv {
+                grid-row: 1;
+                grid-column: 2;
+            }
+            h1 {
+                font-size: 5vw;
+                margin: 0.5em;
+            }
+            form {
+                margin: 0 auto;
+                font-size: 3vw;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 5px solid #000000;
+            }
+            form * {
+                font-size: 3vw;
+                padding: 10px;
+            }
+            textarea {
+                resize: vertical;
+            }
+            @media only screen and (max-width: 1000px) {
+                main {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                #maps {
+                    width: 90vw;
+                    height: 90vw;
+                    margin-top: 40px;
+                }
+                #maps iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+                #formdiv {
+                    width: 100vw;
+                    margin-top: 100px;
+                }
+            }
+        </style>
+        <script src="style/javascript.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="logoDiv">
+                <div id="circle"></div>
+                <img src="content/LogoKras.png" alt="logo">
+            </div>
+            <nav>
+                <a href="index.html">Homepage</a>
+                <a href="contact.html">Contact</a>
+                <a href="aboutUs.html">Over ons</a>
+                <a href="tarieven.html">Tarieven</a>
+                <a href="verhuizing.html">Verhuizing</a>
+                <a href="webhosting.php">Webhosting</a>
+            </nav>
+        </header>
+        <main>
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'nl'}, 'google_translate_element');
+                }
+            </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <div id="formdiv">
+                <h1>Stuur ons een bericht</h1>
+                <form method="post" action="">
+                    <input type="text" id="naam" name="naam" placeholder="naam">
+                    <input type="text" id="e-mail" name="e-mail" placeholder="e-mail">
+                    <textarea id="bericht" name="bericht" placeholder="je bericht hier"></textarea>
+                    <input type="submit" value="verstuur">
+                </form>
+            </div>
+            <div id="maps" style="position: relative;"><iframe width="500" height="440" src="https://maps.google.com/maps?width=500&amp;height=440&amp;hl=en&amp;q=Kasteeldreef%20122%2C%20Tilburg+(KrasDesign)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/ja/%22%3EGooglemapsgenerator.com/ja/</a> & <a href="https://www.unorules.org/%22%3ERules of uno</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br/>
+        </main>
+    </body>
+</html>

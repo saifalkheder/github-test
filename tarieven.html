@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Kras design</title>
+        <link rel="stylesheet" href="style/style.css">
+        <style>
+            header nav a:nth-of-type(4) {
+                border-bottom: #ffffff 10px solid;
+                font-weight: bold;
+            }
+            body {
+                height: 100vh;
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            main > * {
+                font-size: 3vw;
+                margin: 20px;
+            }
+            p {
+                margin-top: 100px;
+                width: min(90%,20em);
+            }
+            #maps {
+                background-color: #ffffff;
+                border: 5px solid #000000;
+                width: min(60vw,22.5em);
+                height: min(20vw,7.5em);
+            }
+            #maps iframe {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <script src="style/javascript.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="logoDiv">
+                <div id="circle"></div>
+                <img src="content/LogoKras.png" alt="logo">
+            </div>
+            <nav>
+                <a href="index.html">Homepage</a>
+                <a href="contact.html">Contact</a>
+                <a href="aboutUs.html">About us</a>
+                <a href="tarieven.html">Tarieven</a>
+                <a href="verhuizing.html">Verhuizing</a>
+                <a href="webhosting.php">Webhosting</a>
+            </nav>
+        </header>
+        <main>
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'nl'}, 'google_translate_element');
+                }
+            </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+            <p>Kom even een bakje koffie drinken op locatie!</p>
+            <div id="maps" style="position: relative;"><iframe width="500" height="440" src="https://maps.google.com/maps?width=500&amp;height=440&amp;hl=en&amp;q=Kasteeldreef%20122%2C%20Tilburg+(KrasDesign)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/ja/%22%3EGooglemapsgenerator.com/ja/</a> & <a href="https://www.unorules.org/%22%3ERules of uno</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br/>
+        </main>
+    </body>
+</html>

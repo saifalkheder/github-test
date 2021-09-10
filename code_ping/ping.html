@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>test</title>
+        <meta charset="utf-8">
+    </head>
+    <body> 
+        <script>
+            function ping(url) {
+                return new Promise(function(resolve, reject) {
+
+                    const xmlhttp = new XMLHttpRequest();
+                    
+                    xmlhttp.onreadystatechange = function() {
+                        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                           if (xmlhttp.status == 200) {
+                               const e = JSON.parse(xmlhttp.response).exists;
+                               resolve(e);
+                           }
+                           else if (xmlhttp.status == 400) {
+                              reject(false);
+                           }
+                           else {
+                               reject(false);
+                           }
+                        }
+                    }
+                    xmlhttp.open("GET", 'http://www.dennisvanriet.nl/ping/ping_ws.php?url=' + url + '&t=' + Math.random(), true);
+                    xmlhttp.send();
+                });
+            }
+            
+            //URL om te testen
+            const url = 'http://google.com';
+            ping(url).then(function(e) {
+                if (e === 'true') {
+                    console.log(url + ' bestaat');
+                } else {
+                    console.log(url + ' bestaat niet');
+                }
+            }).catch(function(err) {
+                console.log(url + ' bestaat niet');
+            });
+        
+        </script>
+    </body>
+</html>
